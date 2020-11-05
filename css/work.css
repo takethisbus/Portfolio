@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kanit:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body,html,#wrap{width:100%;height:100%;position:relative;}
+body{font:normal 16px/1.5em "Libre Baskerville",serif;}
+*{box-sizing:border-box;}
+
+@keyframes seemore{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+
+
+
+/*work*/
+h1{width:100%;padding-top:3%;padding-bottom:3%;
+    font-size:6vw;font-style:italic;font-weight:normal;
+    font-family:'Libre Baskerville', serif;color:#000000;
+    position:absolute;top:0;left:0;
+    z-index:20;text-indent:10px;}
+
+#wrap section.flag{width:90vw;height:90vw;
+            position:absolute;top:5%;left:50%;
+            transform:translate(-50%,0);z-index:5;}
+#wrap p.click_btn{position:fixed;right:0;top:50%;
+                transform:translate(0,-50%);
+                z-index:20;}
+p.click_btn a{color:#000000;font-size:3vw;
+            font-style:italic;
+            text-decoration:underline;}
+
+/*공통*/
+.layout{position:absolute;top:0;left:0;
+        width:100%;height:100vw;min-height:100%;
+        padding:10%;}
+
+h2.title{font-size:4.2vw;
+		letter-spacing:-2px;
+                color:#000000;
+                font-weight:bold;
+                text-align:center;
+                padding:1%;}
+p.site_option{font-size:1.5vw;
+            text-align:center;padding:3%;
+            color:#000000;}
+h3.site_name{font-size:3vw;color:#ffffff;
+            font-weight:bold;
+			line-height:3vw;
+            text-align:center;
+            z-index:30;
+            padding-top:10%;}
+p.see_more{width:10vw;height:10vw;margin-left:20%;
+			animation:seemore 3s infinite linear;}
+.see_more a{display:block;}
+.see_more a img{width:10vw;height:10vw;}
+ul.site_contents{transform:rotate(-90deg);}
+
+.work1 ul.site_contents{margin-left:55%;}
+
+.site_contents li{float:left;}
+.site_contents li::after{content:" / ";color:#000000;}
+.site_contents li:last-child::after{content:"";}
+.site_contents li:hover a{text-decoration:underline;}
+.site_contents li a{font-size:1.5vw;color:#000000;}
+ul.site_for{clear:both;}
+ul.site_for li{margin-right:5%;
+                font-size:3vw;
+                line-height:3vw;
+                color:#000000;}
+
+
+div.work1{background:url(../images/madetlen_bg3.png) no-repeat 0 8vw;background-size:contain;z-index:10;}
+
+
+
+div.work2{width:100%;height:100vw;min-height:100%;
+		color:#ffffff;
+		background:#000000 url(../images/NJP_bg.png) no-repeat 0 bottom;background-size:contain;display:none;
+		font-family: 'Kanit', sans-serif;}
+.work2 h2.title{line-height:4.2vw;color:#ffffff;;}
+.work2 p.site_option{padding:0;color:#ffffff;font-size:1.5vw;}
+.work2 p.see_more{position:absolute;z-index:30;}
+.work2 h3.site_name{position:absolute;left:50%;top:30%;transform:translate(-50%,0);color:#ffffff;text-align:left;}
+.work2 ul.site_contents{display:block;position:absolute;top:70%;left:20%;z-index:30;}
+.work2 ul.site_contents li a{color:#000000;display:block;}
+.work2 ul.site_contents li::after{content:"";}
+.work2 ul.site_for{padding-top:25%;}
+.work2 ul.site_for li{color:#ffffff;margin-bottom:5%;}
+
+
+div.work3{background:url(../images/slou_bg.png) no-repeat 0 8vw;
+        background-size:contain;
+        display:none;
+        color:#352f20;font-family:'Libre Baskerville', serif;}
+.work3 h2.title{line-height:4.2vw;color:#352f20;}
+.work3 p.site_option{padding:3%;font-size:1.5vw;}
+.work3 p.see_more{position:absolute;z-index:30;}
+.work3 h3.site_name{position:absolute;left:50%;top:30%;transform:translate(-50%,0);color:#352f20;}
+.work3 ul.site_contents{display:block;position:absolute;top:70%;left:20%;z-index:30;}
+.work3 ul.site_contents li a{display:block;color:#352f20;}
+.work3 ul.site_contents li::after{content:"";}
+.work3 ul.site_for{padding-top:40%;}
+.work3 ul.site_for li{margin-bottom:5%;}

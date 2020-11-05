@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Portfolio</title>
+<!--[if lt IE 9]>   
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script>
+		$(document).ready(function(){
+			var n=1;
+			$("section").mousewheel(function(e,delta){
+				n=$(this).attr("data-n")-delta;
+				var target=$("section").eq(n-1).offset().top;
+				var playVideo=$(".playvideo").get();
+				$("body,html").stop().animate({"scrollTop":target},500);
+				if(target>0&&target<1000){
+					playVideo[0].play();
+					playVideo[1].play();
+					playVideo[2].play();
+				}else{
+					playVideo[0].pause();
+					playVideo[1].pause();
+					playVideo[2].pause();
+				}
+				return false;
+			});
+			
+		});//end
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/slou.css">
+</head>
+<body>
+	<section id="main" data-n="1">
+		<header id="menu">
+			<div class="menu_top">
+				<p>2020.10~</p>
+				<ul>
+					<li>Responive</li>
+					<li>For</li>
+					<li>Desktop</li>
+					<li>Tablet</li>
+					<li>Mobile</li>
+				</ul>
+				<p><a href="http://takethisbus.dothome.co.kr/">index.html</a></p>
+			</div><!--menu_top-->
+			<p><a href="http://takethisbus.dothome.co.kr/"><strong>Go to Website.</strong></a></p>
+		</header><!--menu-->
+		<ul class="slou_slogan">
+			<li>Eat</li>
+			<li>Play</li>
+			<li>Love</li>
+			<li>Rest</li>
+			<li>Read</li>
+			<li>Hug</li>
+			<li>Cuddle</li>
+			<li>Talk</li>
+			<li>Play</li>
+			<li>Listen</li>
+			<li>Sleep</li>
+			<li>Calm</li>
+			<li>Slow</li>
+			<li><img src="images/slouLogo.png" alt="slou" width="160" height="120"></li>
+		</ul>
+		<h1>Renual</h1>
+		<p>life <span>o</span>n you</p>
+	</section><!--main-->
+	<section id="about" data-n="2">
+		<h2>about.</h2>
+		<p> 바쁜 하루에 전하는 느린 잠의 가치, 슬로우(slou)는 휴식에 본질에 근거해 쓰면 쓸수록 가치를 느낄 수 있는 제품을 합리적인 가격으로 제공하는 브랜드입니다.</p>
+		<div class="slou_video">
+			<div>
+				<video width="640" height="798" loop muted class="playvideo">
+					<source src="video/comfort.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div>
+				<video width="640" height="798" loop muted class="playvideo">
+					<source src="video/safe.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div>
+				<video width="640" height="798" loop muted class="playvideo">
+					<source src="video/easy.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div><!--blou_video-->
+	</section><!--about-->
+	<section id="purpose" data-n="3">
+		<div class="purpose_explain">
+			<h2>purpose.</h2>
+			<div>
+				<p>네이버에 슬로우 제품을 검색해보면 자사 홈페이지가 아닌 다른 사이트에서 슬로우 제품이 최저가로 판매되고 있거나 슬로우에서 네이버 스토어를 따로 운영하고 있었습니다. 이에 근거하여 현존하는 자사홈페이지는 슬로우의 브랜드적인 이미지를 강조하는 방향으로 리뉴얼을 진행하였습니다.</p>
+				<p> 또한 메인이미지, 새로 출시된 제품, 리뷰, 랩, 트라이브 형태로 구성되어 있던 구조에 리뷰를 간략하게 줄이고 브랜드 스토리를 넣어 메인페이지에 접속했을 때 스크롤만으로도 브랜드의 이미지를 알 수 있게 구성하였습니다.</p>
+			</div>
+		</div><!--purpose_explain-->
+		<ul>
+			<li class="comfort">comfort</li>
+			<li class="safe"><span>safe</span></li>
+			<li class="easy">
+				<span>easy</span>
+				<svg width="200" height="200">
+					<rect width="200" height="200" x="0" y="0" rx="20" ry="20"/>
+				</svg>
+			</li>
+		</ul>
+		<p><a href="http://takethisbus.dothome.co.kr/"><strong>Go to Website.</strong></a></p>
+	</section><!--purpose-->
+</body>
+</html>

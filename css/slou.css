@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+
+body,html{height:100%;}
+section{width:100%;height:100%;}
+section,header{display:block;}
+video{border:none;}
+
+
+body{font:normal 12px/1.5em 'Libre Baskerville',serif;}
+
+@keyframes life_on_you{
+	0%{letter-spacing:0;}
+	100%{letter-spacing:1em;}
+}
+@keyframes on{
+	0%{left:60%;}
+	50%{left:10%;}
+}
+
+@keyframes comfort{
+	0%{box-shadow:inset 0 0 0 0 rgba(224,219,208,1);}
+	100%{box-shadow:inset 0 -80px 80px 20px rgba(224,219,208,1);}
+}
+
+@keyframes safe{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(45deg);}
+}
+@keyframes safe_title{
+	100%{transform:rotate(-45deg);}
+}
+
+@keyframes easy{
+	0%{box-shadow:inset -200px -200px 200px 200px rgba(224,219,208,1);}
+	100%{box-shadow:inset 0 0 0 0 rgba(224,219,208,1);}
+}
+@keyframes easy_title{
+	0%{stroke-dashoffset:0;}
+	100%{stroke-dashoffset:800;}
+}
+
+
+#main{background: rgb(233,228,215);
+		background: -moz-linear-gradient(180deg, rgba(233,228,215,1) 0%, rgba(255,255,255,0) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(233,228,215,1) 0%, rgba(255,255,255,0) 100%);
+		background: linear-gradient(180deg, rgba(233,228,215,1) 0%, rgba(255,255,255,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9e4d7",endColorstr="#ffffff",GradientType=1);
+		position:relative;}
+
+#menu{padding-top:3%;padding-left:3%;padding-right:3%;
+		font-size:1vw;
+		line-height:1.2em;}
+/*2020.10~*/
+#menu .menu_top p:nth-of-type(1){float:left;}
+/*responsive*/
+#menu .menu_top ul{float:left;
+					margin-left:30%;width:40%;}
+.menu_top ul li{float:left;
+				margin-right:2%;line-height:2em;}
+/*index.html*/
+#menu .menu_top p:nth-of-type(2){float:right;}
+.menu_top p:nth-of-type(2) a{color:#999999;}
+.menu_top p:nth-of-type(2):hover a{color:#000000;text-decoration:underline;}
+
+/*go to website*/
+#menu > p{clear:both;font-size:3vw;line-height:1.3em;
+		text-align:left;}
+#menu > p a{color:#000000;}
+
+
+#main .slou_slogan{font-size:0.8vw;padding-left:10%;padding-top:8%;
+					background:url(../images/slou_main.png) no-repeat 70% 30%;}
+
+/*renual*/
+#main h1{font-size:4.5vw;transform:rotate(-90deg);transform-origin:top left;position:absolute;right:-12%;top:51%;}
+
+/*life on you*/
+#main > p{font-size:4vw;text-align:right;padding-right:5%;letter-spacing:0.5em;padding-top:5%;position:relative;animation:life_on_you 6s infinite;}
+#main > p:hover span{position:absolute;left:60%;animation:on 5s infinite ease-in-out;}
+
+
+
+/*about*/
+#about{position:relative;padding-top:2%;}
+#about h2{font-size:2vw;writing-mode:vertical-rl;text-orientation:upright;margin-left:10%;float:left;}
+#about p{font-family:'Nanum Myeongjo', serif;
+		font-size:1vw;
+		padding-left:20%;padding-top:5%;}
+
+#about .slou_video{position:absolute;bottom:0;left:0;z-index:-1;
+					width:100%;height:100%;}
+#about .slou_video div{width:33.3%;height:100%;float:left;
+					overflow:hidden;}
+.slou_video div video{height:70%;width:auto;margin-top:30%;}
+
+
+
+/*purpose*/
+#purpose{position:relative;padding-top:5%;}
+#purpose .purpose_explain h2{font-size:2vw;
+							writing-mode:vertical-rl;
+							text-orientation:upright;
+							margin-left:10%;
+							float:left;}
+#purpose .purpose_explain div{float:left;width:70%;
+							padding:5% 5% 1% 5%;}
+#purpose .purpose_explain p{font-family:'Nanum Myeongjo', serif;font-size:1vw;line-height:2em;}
+#purpose .purpose_explain p:nth-of-type(2){}
+
+
+#purpose ul{position:absolute;right:10%;bottom:10%;
+			width:80%;height:30%;
+			z-index:-1;}
+#purpose ul li{width:200px;height:200px;float:left;
+				border-radius:20px;margin-right:20%;}
+
+#purpose ul li.comfort{box-shadow:inset 0 -70px 30px 0 rgba(224,219,208,1);
+						font-size:4.5vw;
+						text-indent:-40%;
+						color:#e0dbd0;
+						margin-left:5%;
+						animation:comfort 5s infinite linear;}
+
+
+#purpose ul li.safe{border:1px solid #e0dbd0;
+					animation:safe 5s infinite;}
+#purpose ul li.safe span{display:block;
+						font-size:4.5vw;text-align:center;
+						color:#e0dbd0;width:100%;height:100%;
+						line-height:170px;
+						animation:safe_title 5s infinite linear;}
+#purpose ul li.easy{position:relative;margin-right:0;}
+#purpose ul li.easy span{width:100%;height:100%;
+					display:inline-block;border-radius:20px;
+					font-size:4.5vw;text-align:center;
+					line-height:170px;color:#e0dbd0;
+					box-shadow:inset 500px 500px 80px 20px rgba(224,219,208,1);
+					animation:easy 5s infinite;}
+#purpose ul li.easy svg{position:absolute;top:0;left:0;
+						stroke:#b3afac;
+						stroke-width:1;
+						fill:none;
+						stroke-dashoffset:0;
+						stroke-dasharray:800;
+						animation:easy_title 5s infinite linear;}
+
+#purpose > p{clear:both;text-align:right;font-size:3vw;line-height:1.3em;}
+#purpose > p > a{color:#b3afac;}
+
+
+@media all and (max-width:1400px){
+	#purpose ul li{width:150px;height:150px;}
+	#purpose ul li.easy svg rect{width:150px;height:150px;}
+	#purpose ul li.safe span{line-height:150px;}
+	#purpose ul li.easy span{line-height:150px;}
+}
+@media all and (max-width:1000px){
+	#purpose ul li{width:100px;height:100px;}
+	#purpose ul li.easy svg rect{width:100px;height:100px;}
+	#purpose ul li.safe sapn{line-height:100px;}
+	#purpose ul li.easy span{line-height:100px;}
+}
+@media all and (max-width:700px){
+	#purpose ul li{width:50px;height:50px;}
+	#purpose ul li.easy svg rect{width:50px;height:50px;}
+	#purpose ul li.easy span{line-height:50px;}
+}
