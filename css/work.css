@@ -19,6 +19,8 @@ h1{width:100%;padding-top:3%;padding-bottom:3%;
     font-family:'Libre Baskerville', serif;color:#000000;
     position:absolute;top:0;left:0;
     z-index:20;text-indent:10px;}
+#wrap > p.home{position:absolute;top:0;right:0;z-index:25;}
+#wrap > p.home > a{color:#000000;}
 
 #wrap section.flag{width:90vw;height:90vw;
             position:absolute;top:5%;left:50%;
@@ -50,10 +52,11 @@ h3.site_name{font-size:3vw;color:#ffffff;
             text-align:center;
             z-index:30;
             padding-top:10%;}
-p.see_more{width:10vw;height:10vw;margin-left:20%;
-			animation:seemore 3s infinite linear;}
+p.see_more{width:10vw;height:10vw;margin-left:20%;position:relative;
+			animation:seemore 5s infinite linear;}
 .see_more a{display:block;}
 .see_more a img{width:10vw;height:10vw;}
+p.see_more a span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#000000;}
 ul.site_contents{transform:rotate(-90deg);}
 
 .work1 ul.site_contents{margin-left:55%;}
@@ -81,6 +84,7 @@ div.work2{width:100%;height:100vw;min-height:100%;
 .work2 h2.title{line-height:4.2vw;color:#ffffff;;}
 .work2 p.site_option{padding:0;color:#ffffff;font-size:1.5vw;}
 .work2 p.see_more{position:absolute;z-index:30;}
+.work2 p.see_more a span{color:#ffffff;}
 .work2 h3.site_name{position:absolute;left:50%;top:30%;transform:translate(-50%,0);color:#ffffff;text-align:left;}
 .work2 ul.site_contents{display:block;position:absolute;top:70%;left:20%;z-index:30;}
 .work2 ul.site_contents li a{color:#000000;display:block;}
@@ -96,6 +100,7 @@ div.work3{background:url(../images/slou_bg.png) no-repeat 0 8vw;
 .work3 h2.title{line-height:4.2vw;color:#352f20;}
 .work3 p.site_option{padding:3%;font-size:1.5vw;}
 .work3 p.see_more{position:absolute;z-index:30;}
+.work3 p.see_more a span{color:#ffffff;}
 .work3 h3.site_name{position:absolute;left:50%;top:30%;transform:translate(-50%,0);color:#352f20;}
 .work3 ul.site_contents{display:block;position:absolute;top:70%;left:20%;z-index:30;}
 .work3 ul.site_contents li a{display:block;color:#352f20;}

@@ -4,15 +4,18 @@ $(document).ready(function(){
 	$(".click_btn a").click(function(){
 		num++;
 		$("h1").css("color","");
+		$("p.home a").css("color","");
 		$(".click_btn a").css("color","");
 		$("#wrap div").hide();
 		$("#wrap div").eq(num).show();
 		if(num==1){
 			$("body h1").css("color","#ffffff");
+			$("#wrap p.home a").css("color","#ffffff");
 			$(".click_btn a").css("color","#ffffff");
 		}else if(num==3){
 			num=0;
 			$("h1").css("color","");
+			$("p.home a").css("color","");
 			$("#wrap div").eq(num).show();
 		}
 	});
