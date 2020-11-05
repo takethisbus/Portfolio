@@ -3,7 +3,7 @@
 
 ## 메뉴목록
 1. about
-2. wor
+2. work
 >2-1.mad et len
 >>2-1-1. MAD et LEN 리뉴얼 소개 페이지
 >2-2.NJP art center
