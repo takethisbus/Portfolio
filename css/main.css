@@ -140,7 +140,7 @@ body{font-family:'Libre Baskerville', serif;}
 .skills li:last-child{margin-right:0;
 					animation:skills_70 3s 1 ease-in;
 					animation-fill-mode:forwards;animation-delay:2s;}
-.skills li span{display:block;margin-top:100%;font-size:1vw;color:#000000;}
+.skills li span{display:block;margin-top:100%;font-size:0.8vw;color:#000000;}
 
 
 
